@@ -74,7 +74,17 @@
         grid-column-end: 4/5 ;*/
         grid-area: c8;
     }
-    @media(max-width)
+    @media(max-width: 768px){
+        .main-container{
+            background-color: aqua;
+            grid-template-columns: 2fr;
+            grid-template-rows: repeat(8,200px);
+            grid-template-areas: initial;
+        }
+        .main-container div{
+            grid-area: initial !important;
+        }
+    }
 </style>
 <body>
     <main class="main-container">
